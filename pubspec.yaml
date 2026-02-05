@@ -45,13 +45,18 @@ dependencies:
   flutter_bloc: ^9.1.1
   internet_connection_checker_plus: ^2.9.1+2
   flutter_otp_text_field: ^1.5.1+1
-  dotlottie_flutter: ^0.0.2
+  # dotlottie_flutter: ^0.0.2  # Commented out - use lottie package instead
   camera: ^0.11.3
-  ar_flutter_plugin: ^0.7.3
-  google_maps_flutter: ^2.14.0
+  #ar_flutter_plugin: ^0.7.3
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
   provider: ^6.1.5+1
   geolocator: ^9.0.2
   webview_flutter: ^4.13.1
+  lottie: ^2.7.0
+  video_player: ^2.9.2
+  ar_flutter_plugin: ^0.7.3
+  google_maps_flutter: ^2.14.0
 
 dev_dependencies:
   flutter_test:
