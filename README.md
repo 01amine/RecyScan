@@ -43,21 +43,3 @@ flutter pub get
 ```bash
 flutter run
 ```
-
-**Environment variables**
-- `BASE_URL`: Base API for auth and waste scanning endpoints (e.g. `/user/me`, `/waste/scan`).
-- `RECYCEL_API`: Smart bin API used by the plastic deposit flow (e.g. `/deposit`).
-
-**Project structure (high level)**
-- `lib/main.dart`: App bootstrap, DI init, route generation.
-- `lib/di/`: Service locator setup.
-- `lib/core/`: Theme, constants, network helpers, shared utilities.
-- `lib/features/`: Feature modules (auth, onboarding, splash, waste_scanning, smart_map, plastic).
-
-**Notes / gaps to be aware of**
-- Routes reference `/home`, but it is not registered in `lib/main.dart`. Successful auth or splash routing will currently land on the not-found page.
-- `lib/features/waste_scanning/presentaion/presentation/ar_page.dart` uses a placeholder `.gltf` URI. Replace with a real asset or remote model.
-- Smart map data is currently stubbed in `LogisticsRepositoryImpl` and returns hard-coded points.
-- UI copy in onboarding and auth flows references a medical library brand, which may not match the recycling theme.
-
-If you want, I can add a proper `Home` screen and wire the routes, or tailor the README for a specific release target.
